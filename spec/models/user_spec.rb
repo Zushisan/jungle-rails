@@ -45,8 +45,9 @@ RSpec.describe User, type: :model do
         password_confirmation: '123456'
       })
 
-     expect(user2).to_not be_valid
-     expect(user3).to_not be_valid
+      expect(user1).to be_valid
+      expect(user2).to_not be_valid
+      expect(user3).to_not be_valid
     end
 
     it "should fail if password is to short or too long" do
