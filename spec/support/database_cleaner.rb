@@ -41,4 +41,8 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
+  config.after(:all, :type => :feature) do
+    DatabaseCleaner.clean
+  end
+
 end
