@@ -24,10 +24,10 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
 
     find('.main-img')['complete']
 
-    # DEBUG
-    save_screenshot
-
+    
     # VERIFY
     expect(page).to have_css 'article.product-detail'
+    # DEBUG
+    save_screenshot
   end
 end

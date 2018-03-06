@@ -24,10 +24,10 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
 
     
 
-    # DEBUG
-    save_screenshot
-
+    
     # VERIFY
     expect(page).to have_css '.my-cart', text: "1"
+    # DEBUG
+    save_screenshot
   end
 end

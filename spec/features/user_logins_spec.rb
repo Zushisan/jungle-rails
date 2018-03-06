@@ -26,11 +26,11 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
 
     find('.navbar')
 
-    # DEBUG
-    save_screenshot
-
+    
     # VERIFY
     expect(page).to have_css '.signed-in-as', text: "Signed in as Zushi"
+    # DEBUG
+    save_screenshot
   end
 end
 
